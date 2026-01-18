@@ -10,7 +10,7 @@ namespace fs = std::filesystem;
 
 class Commands
 {
-	public:
+public:
 
 	void Multiply(); //aks user for two number to multiply 
 
@@ -33,9 +33,9 @@ class Commands
 	void Write_to_File();  //asks user for a file path to write to 
 
 	void Create_folder(); //asks user for a name and path for a folder creation 
-	
-	
-	
+
+	void Change_Color(); //changes color of console text
+
 };
 
 
@@ -69,7 +69,7 @@ class Commands
 				std::cout << "Folder was created!\n";
 			}
 			else {
-				std::cout << "There was a error creating your folder!\n";
+				std::cout << "\033[31mThere was a error creating your folder!\033[32m\n";
 			}
 		}
 
@@ -159,5 +159,17 @@ class Commands
 			std::getline(std::cin, angle);
 			std::cout << std::tan(std::stoi(angle) * PI / 180) << "\n";
 		}
-
+		
+		void Commands::Change_Color() {
+			std::cout << "What color would you like the text to be?\n"; 
+			std::string input;
+			std::getline(std::cin, input);
+			if (input == "blue") std::cout << "\033[34m"; 
+			if (input == "purple") std::cout << "\033[35m";
+			if (input == "red") std::cout << "\033[31m";
+			if (input == "yellow") std::cout << "\033[33m";
+			if (input == "green") std::cout << "\033[32m";
+			if (input == "light blue") std::cout << "\033[36m";
+			if (input == "white") std::cout << "\033[37m";
+		}
 
