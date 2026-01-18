@@ -53,27 +53,31 @@ int main()
         std::cout << "HORSE_USER->"; 
         std::string input;
         std::getline(std::cin, input); 
-        if (input == "filenew") {
-            commands.Create_File(); 
-        }
-        else if (input == "filewrite") {
-            commands.Write_to_File(); 
-        }
-        else if (input == "fileread") {
-            commands.Read_file(); 
-        }
-        else if (input == "sumof") {
-            commands.Find_sum(); 
-        }
-        else if (input == "productof") {
-            commands.Multiply(); 
-        }
-        else if (input == "quotientof") {
-            commands.Divide(); 
-        }
-        else if (input == "diffrenceof") {
-            commands.Find_Diffrence(); 
-        }
+
+        if (input == "filenew") commands.Create_File();
+            
+        else if (input == "filewrite")  commands.Write_to_File();
+               
+        else if (input == "fileread")   commands.Read_file();
+          
+        else if (input == "sumof")  commands.Find_sum();
+           
+        else if (input == "productof")    commands.Multiply();
+         
+        else if (input == "quotientof")  commands.Divide();
+           
+        else if (input == "diffrenceof") commands.Find_Diffrence();
+
+        else if (input == "stop") return 0;
+
+        else if (input == "foldernew") commands.Create_folder();
+
+        else if (input == "sin()") commands.Find_sin();
+
+        else if (input == "cos()") commands.Find_cos();
+
+        else if (input == "tan()") commands.Find_tan(); 
+
     }
    
 }

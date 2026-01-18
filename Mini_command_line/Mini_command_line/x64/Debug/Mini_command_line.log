@@ -1,3 +1,5 @@
 ﻿  Mini_command_line.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\matt7\source\repos\Mini_command_line\Mini_command_line\Commands.h(7,18): warning C4305: 'initializing': truncation from 'double' to 'float'
+  (compiling source file 'Mini_command_line.cpp')
+  
   Mini_command_line.vcxproj -> C:\Users\matt7\source\repos\Mini_command_line\x64\Debug\Mini_command_line.exe
