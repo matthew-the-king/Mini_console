@@ -78,7 +78,9 @@ int main()
 
         else if (input == "tan()") commands.Find_tan();
 
-        else if (input == "color") commands.Change_Color(); 
+        else if (input == "color") commands.Change_Color();
+
+        else if (input == "help") commands.list_commands(); 
     }
                         
 }

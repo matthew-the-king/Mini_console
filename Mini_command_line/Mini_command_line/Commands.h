@@ -36,6 +36,8 @@ public:
 
 	void Change_Color(); //changes color of console text
 
+	void list_commands(); //lsit all of the console commands
+
 };
 
 
@@ -171,5 +173,24 @@ public:
 			if (input == "green") std::cout << "\033[32m";
 			if (input == "light blue") std::cout << "\033[36m";
 			if (input == "white") std::cout << "\033[37m";
+		}
+
+		void Commands::list_commands() {
+			std::cout << R"(
+			1.filenew -creates a new file
+			2.fileread -reads a file
+			3.filewrite -writes to a file
+			4.foldernew -creates a new folder 
+			5.sumof -adds two numbers
+			6.diffrenceof -finds the diffrence of two numbers
+			7.productof -finds the product of two numbers
+			8.quotientof -finds the quotient of two numbers
+			9.sin() -finds sin(inputed_angle)
+			10.cos() -finds cos(inputed_angle)
+			11.tan() -finds tan(inputed_angle)
+			12.color -changes text color (blue,light blue, purple, red, yellow, green, white)
+
+			
+)"; 
 		}
 
